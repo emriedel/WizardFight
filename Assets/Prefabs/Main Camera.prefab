@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &103692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400572}
+  - 20: {fileID: 2068610}
+  - 92: {fileID: 9287688}
+  - 124: {fileID: 12401890}
+  - 81: {fileID: 8172438}
+  - 114: {fileID: 11499308}
+  - 114: {fileID: 11488380}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400572
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!20 &2068610
+Camera:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103692}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!81 &8172438
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103692}
+  m_Enabled: 1
+--- !u!92 &9287688
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103692}
+  m_Enabled: 1
+--- !u!114 &11488380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1dc5f6041ef2a40832e632f0ce4090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11499308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 427177cb9d173774caa32fa015411a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
+  grenades: []
+  bounceTiles: []
+  grenadeCount: 0000000000000000
+  currentPlayer: 0
+  maxMoves: 3
+  actionDone: 0
+  grenadesMoving: 0
+  performingAction: 0
+  mapWidth: 10
+  mapHeight: 8
+  startingPos:
+  - {x: 1, y: 3, z: 0}
+  - {x: 8, y: 4, z: 0}
+  bounceTilePos:
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: 6, z: 0}
+  - {x: 8, y: 1, z: 0}
+  - {x: 8, y: 6, z: 1}
+  - {x: 4, y: 4, z: 0}
+  - {x: 5, y: 3, z: 0}
+  tile: {fileID: 177072, guid: 5de025bc801b24a2da220186bf112abe, type: 2}
+  player: {fileID: 199354, guid: b3294f851ba98406e8170786b04202df, type: 2}
+  bounceTile: {fileID: 183070, guid: ed553c6a36a782b4e93b5e9e9bb407f9, type: 2}
+  grenadePrefab: {fileID: 186072, guid: 3fa931c8e16b44ec0a95f17af592c80d, type: 2}
+  defaultSprite: {fileID: 21300000, guid: b10482c68a2964eae9ccba4d9c1d1b50, type: 3}
+  greenSprite: {fileID: 21300000, guid: ed95e8170c1f64eeb89e1b932d0f613a, type: 3}
+  bouncetileSprites:
+  - {fileID: 21300000, guid: 122350679a5f15d41a16ece694bddc38, type: 3}
+  - {fileID: 21300000, guid: 65b362ca83dd5f844b07759e5143fd3d, type: 3}
+  - {fileID: 21300000, guid: cdec9fc1062d88b4ba5b89e2a41b349b, type: 3}
+  - {fileID: 21300000, guid: a016c220584ea3d478951dd9ac193dfc, type: 3}
+  placeObj: 3
+  remainingMoves: 3
+  remainingGrenades: 0
+  remainingBands: 0
+--- !u!124 &12401890
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103692}
+  m_Enabled: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 103692}
+  m_IsPrefabParent: 1
